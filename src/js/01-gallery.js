@@ -33,7 +33,6 @@ const handleListClick = (event) => {
 }
     const selectedImage = event.target.getAttribute('data-source')
     
-    // const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
      lightbox.open(selectedImage);
 
 }
