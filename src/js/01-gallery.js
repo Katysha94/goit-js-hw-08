@@ -25,18 +25,3 @@ alt="${description}"
 galleryList.insertAdjacentHTML("beforeend", renderList(galleryItems));
 
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
-
-const handleListClick = (event) => {
-      event.preventDefault();
-    if (event.currentTarget === event.target) {
-    return;
-}
-    const selectedImage = event.target.getAttribute('data-source')
-    
-     lightbox.open(selectedImage);
-
-}
-
-
-
-galleryList.addEventListener('click', handleListClick)
